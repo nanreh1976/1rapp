@@ -1,1 +1,23 @@
-<p>Aqui iria un empleado</p>
+<p >Empleado</p>
+
+<p>Nombre: {{nombre}} </p>
+
+<p>Apellido: {{apellido}}</p>
+
+<p>Edad: {{edad<18 ? "menor de edad":"mayor de edad"}}</p>
+
+<p>Empresa: {{empresa.value}}</p>
+
+<! introduce la empresa: <input type="text" #empresa    Val aca identifica el cuadro donde ingresa la emprea  para que la funcion en el ts lo agregue ahi>
+introduce la empresa: <input type="text" #empresa (keyup)="0">
+
+<br/>
+<br/>
+<br/>
+
+
+ <!   input type="button" value="Dale!" ((click))="callco(empresa.value)"   crea boton y toma el evento del cick-->
+
+
+
+
